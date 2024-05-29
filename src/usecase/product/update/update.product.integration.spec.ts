@@ -45,7 +45,8 @@ describe("Integration Test find customer use case", () => {
         expect(findProduct).toEqual({
             _id: '1',
             _name: 'Product Name 1',
-            _price: 100
+            _price: 100,
+            notification: { "errors": [] },
         });
 
         product.changeName('Product Name 2');
